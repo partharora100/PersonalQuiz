@@ -32,7 +32,7 @@ const play = function(question, answer) {
 
   let userAnswer = readlineSync.question(question)
 
-  if (userAnswer === answer) {
+  if (userAnswer.toLowerCase() === answer.toLowerCase()) {
     score++
     console.log(`Your are rigth and your current is ${score}`)
     console.log("-------------------")
